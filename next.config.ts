@@ -2,10 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   turbopack: {
-    root: './'
-  },
-  experimental: {
-    appDir: false
+    root: __dirname
   }
 }
 
