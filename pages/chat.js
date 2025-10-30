@@ -2,8 +2,8 @@ import ChatBox from '../components/ChatBox'
 
 export default function Chat() {
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>Chat</h1>
+    <div className="min-h-screen p-8">
+      <h2 className="text-2xl font-semibold mb-4">Chat Room</h2>
       <ChatBox />
     </div>
   )
