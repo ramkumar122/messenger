@@ -1,17 +1,20 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">
-        Welcome to Gnanalytica Messenger 🚀
-      </h1>
-      <p className="text-gray-700 mb-6">
-        Start chatting with AI-powered summaries.
+    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center">
+      <Navbar />
+      <h1 className="text-4xl font-bold mb-4">💬 Messenger Prototype</h1>
+      <p className="text-lg text-gray-300 mb-8">
+        Welcome! Start chatting instantly with your friends.
       </p>
-      <Link href="/chat" className="text-white bg-blue-500 px-4 py-2 rounded">
+      <Link
+        href="/chat"
+        className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition"
+      >
         Go to Chat
       </Link>
     </div>
-  )
+  );
 }

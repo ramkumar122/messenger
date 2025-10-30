@@ -1,10 +1,11 @@
-import ChatBox from '../components/ChatBox'
+import ChatBox from '@/components/ChatBox';
+import Navbar from '@/components/Navbar';
 
-export default function Chat() {
+export default function ChatPage() {
   return (
-    <div className="min-h-screen p-8">
-      <h2 className="text-2xl font-semibold mb-4">Chat Room</h2>
+    <div className="min-h-screen bg-gray-800 text-white">
+      <Navbar />
       <ChatBox />
     </div>
-  )
+  );
 }

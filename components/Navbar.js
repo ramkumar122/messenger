@@ -1,13 +1,12 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-gray-900 text-white p-4">
-      <div className="font-semibold text-lg">Gnanalytica Messenger</div>
-      <div className="space-x-4">
-        <Link href="/" className="hover:text-blue-300">Home</Link>
-        <Link href="/chat" className="hover:text-blue-300">Chat</Link>
-      </div>
+    <nav className="flex justify-between items-center px-8 py-4 bg-gray-900 shadow-md">
+      <h1 className="text-xl font-bold">Messenger</h1>
+      <Link href="/" className="hover:underline">
+        Home
+      </Link>
     </nav>
-  )
+  );
 }

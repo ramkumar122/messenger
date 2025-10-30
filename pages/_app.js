@@ -1,13 +1,5 @@
-import '../styles/globals.css'
-import Navbar from '../components/Navbar'
+import '@/styles/globals.css';
 
 export default function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Navbar />
-      <main className="min-h-screen bg-gray-50 text-gray-900">
-        <Component {...pageProps} />
-      </main>
-    </>
-  )
+  return <Component {...pageProps} />;
 }
