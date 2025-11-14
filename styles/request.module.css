@@ -1,0 +1,32 @@
+.container { padding: 1.5rem; display: grid; gap: 1rem; }
+.container h1 { font-size: 1.5rem; font-weight: 700; }
+.empty {
+  opacity: .75; background: rgba(255,255,255,.06);
+  padding: 1rem; border-radius: .75rem;
+}
+.list { display: grid; gap: .75rem; }
+.item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: .9rem 1rem;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: .9rem;
+  backdrop-filter: blur(10px);
+}
+.info { display: flex; gap: .8rem; align-items: center; }
+.avatar {
+  width: 40px; height: 40px; border-radius: 9999px;
+  background: linear-gradient(135deg,#3b82f6,#22d3ee);
+  display: grid; place-items: center; font-weight: 700; color: #0b1020;
+}
+.name { font-weight: 600; }
+.email { opacity: .7; font-size: .85rem; }
+.actions { display: flex; gap: .5rem; }
+.accept, .reject {
+  padding: .5rem .8rem; border-radius: .6rem; border: 0; cursor: pointer;
+  color: white;
+}
+.accept { background: linear-gradient(135deg,#22c55e,#16a34a); }
+.reject { background: linear-gradient(135deg,#ef4444,#dc2626); }
+.accept:hover { filter: brightness(1.08); }
+.reject:hover { filter: brightness(1.08); }

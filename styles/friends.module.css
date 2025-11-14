@@ -1,0 +1,25 @@
+.container { display: grid; gap: 1.25rem; padding: 1.5rem; }
+.header { display: flex; gap: 1rem; align-items: center; }
+.header h1 { font-size: 1.5rem; font-weight: 700; }
+.search {
+  flex: 1;
+  padding: .65rem .9rem;
+  border-radius: .75rem;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  outline: none;
+}
+.search:focus { border-color: rgba(99,102,241,.6); box-shadow: 0 0 0 2px rgba(99,102,241,.35) inset; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 1rem;
+}
+.empty {
+  opacity: .7;
+  font-size: .95rem;
+  padding: 1rem;
+  background: rgba(255,255,255,.06);
+  border-radius: .75rem;
+}

@@ -1,0 +1,25 @@
+/* styles/background.module.css */
+.bgWrapper {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b1020 0%, #0f172a 45%, #0b1020 100%);
+  overflow: hidden;
+}
+
+/* full-screen overlay background */
+.bgWrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/message-icon.jpeg") center/cover no-repeat;
+  opacity: 0.1; /* reduce from 0.15 to 0.1 for clarity */
+  filter: blur(1px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-12deg); }
+  50%     { transform: translateY(-16px) rotate(-8deg); }
+}
+.bgWrapper::before { animation: float 9s ease-in-out infinite; }
